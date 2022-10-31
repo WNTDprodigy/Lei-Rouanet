@@ -1,0 +1,123 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(47, 47, 47);
+    color: white;
+}
+ul {
+    margin: 0;
+    padding: 2vw;
+  }
+li {
+    display: inline-block;
+    margin-left: 1vw;
+    margin-right: 1vw;
+  }
+h1 {
+    font-family: Roboto;
+    font-size: 2vw;
+    margin-right: 15vw;
+    letter-spacing: 0.2vw;
+}
+h1:hover {
+    color: #cd83f7;
+}
+a {
+    font-family: Roboto;
+    font-size: 1.4vw;
+    padding: 2vw;
+    height: 2vw;
+    background: none;
+    border: none;
+    border-radius: 10px;
+    margin-top: -1vw;
+    text-decoration: none;
+}
+a.animated-button.thar-three {
+	color: #fff;
+	cursor: pointer;
+	display: block;
+	position: relative;
+	border: 2px solid #F7CA18;
+	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+
+}
+a.animated-button.thar-three:hover {
+	color: #000 !important;
+	background-color: transparent;
+	text-shadow: nthree;
+}
+a.animated-button.thar-three:hover:before {
+	left: 0%;
+	right: auto;
+	width: 100%;
+}
+a.animated-button.thar-three:before {
+	display: block;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	height: 100%;
+	width: 0px;
+	z-index: -1;
+	content: '';
+	color: #000 !important;
+	background: #F7CA18;
+	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+
+}
+#slct{
+    background-color: #F7CA18;
+    color: #000;
+    border-radius: 10px;
+    padding-top: 2.2vw;
+    padding-bottom: 2.2vw;
+}
+#mail{
+    position: absolute;
+    top: 9%;
+    right: 0;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2.5vw;
+    background-color: #A62DC2;
+    border: none;
+    padding: 0;
+    width: 5vw;
+    height: 7vw;
+    margin-top: 0;
+    cursor: pointer;
+    text-align: center;
+}
+img{
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    border-radius: 0.6vw;
+    z-index: 1;
+}
+.flip-container:hover .flipper{
+	transform: rotateY(180deg);
+}
+.flipper{
+	width: 100%;
+	height: 100%;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+    position: relative;
+}
+.front, .back{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+    backface-visibility: hidden;
+}
+.back{
+	transform: rotateY(180deg);
+}
